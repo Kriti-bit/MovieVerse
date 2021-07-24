@@ -1,10 +1,14 @@
-import React from 'react';
-import Title from './comps/Title';
+import React, { useState } from 'react';
+import ImageGrid from './comps/ImageGrid';
 
 function App() {
+
+  const [selectedImg, setSelectedImg] = useState(null);
+
   return (
     <div className="App">
       <Title/>
+      <ImageGrid setSelectedImg={setSelectedImg}/>
     </div>
   );
 }
