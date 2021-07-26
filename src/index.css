@@ -73,3 +73,14 @@ body {
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
     border: 3px solid white;
 }
+
+.modal-head {
+    display: block;
+    color: blueviolet;
+    background-color: var(--primary);
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    text-align: center;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+}

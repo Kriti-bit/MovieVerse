@@ -14,10 +14,18 @@ const Modal = ({selectedMovie, setMovies }) => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
         >
-            <motion.img src={"https://image.tmdb.org/t/p/w500/"+selectedMovie.poster_path} alt="enlarged pic" 
+            <motion.img src={"https://image.tmdb.org/t/p/w500/"+selectedMovie.backdrop_path} alt="enlarged pic" 
                 initial={{ y: "-100vh" }}
                 animate={{ y:0}}
             />
+            <div className="modal-head">
+                 <h1>{selectedMovie.original_title}</h1>
+                 <u> Release Date:</u> {selectedMovie.release_date}
+                 <br/>
+                <u> Overview:</u> {selectedMovie.overview}
+                
+                
+            </div>
         </motion.div>
     )
 
