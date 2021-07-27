@@ -20,9 +20,11 @@ const Modal = ({selectedMovie, setMovies }) => {
             />
             <div className="modal-content">
                  <h1>{selectedMovie.original_title}</h1>
+                 🗓️<u>Released:</u> {selectedMovie.release_date}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ⭐<u>Voting:</u> {selectedMovie.vote_average} 
+                 <br/><br/>
                 {selectedMovie.overview}
-                <br/>
-                🗓️<u>Released:</u> {selectedMovie.release_date}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ⭐<u>Voting:</u> {selectedMovie.vote_average} 
+                
+               
                 
                 
             </div>
