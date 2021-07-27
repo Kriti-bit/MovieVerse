@@ -18,11 +18,11 @@ const Modal = ({selectedMovie, setMovies }) => {
                 initial={{ y: "-100vh" }}
                 animate={{ y:0}}
             />
-            <div className="modal-head">
+            <div className="modal-content">
                  <h1>{selectedMovie.original_title}</h1>
-                 <u> Release Date:</u> {selectedMovie.release_date}
-                 <br/>
-                <u> Overview:</u> {selectedMovie.overview}
+                {selectedMovie.overview}
+                <br/>
+                🗓️<u>Released:</u> {selectedMovie.release_date}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ⭐<u>Voting:</u> {selectedMovie.vote_average} 
                 
                 
             </div>
