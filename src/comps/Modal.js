@@ -24,9 +24,6 @@ const Modal = ({selectedMovie, setMovies }) => {
                  <br/><br/>
                 {selectedMovie.overview}
                 
-               
-                
-                
             </div>
         </motion.div>
     )
