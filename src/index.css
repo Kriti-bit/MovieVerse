@@ -38,7 +38,7 @@ body {
 }
 
 .img-wrap {
-    overflow: hidden;
+    overflow: visible;
     cursor: pointer;
     height: 0;
     padding: 70% 0;
