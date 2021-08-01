@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Favorite from '@material-ui/icons/Favorite';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 
 const ImageGrid = (props) => {
 
@@ -18,6 +22,11 @@ const ImageGrid = (props) => {
 	useEffect(() => {
 		getMovieRequest();
 	}, []);
+
+    const handleClick = (e) => {
+            props.setMovies(null);
+            e.stopPropagation();
+        }
     
     return (
 
@@ -33,8 +42,28 @@ const ImageGrid = (props) => {
                     animate={{ opacity: 1 }}
                     transition = {{ delay: 1 }}
                 />
+
+                <div style={{
+                    margin: 'auto',
+                    display: 'block',
+                    width: 'fit-content',
+                    position:'absolute',
+                    color:'black',
+                    right: '-20px',
+                    top: '-5px',
+                    overflow: 'visible'
+                    }}
+                    onClick={handleClick}>
+                    <FormControlLabel
+                        control={<Checkbox icon={<FavoriteBorder />}
+                        checkedIcon={<Favorite />}
+                        name="checkedH" />}
+                        label=""
+                    />
+                </div>
                </motion.div> 
             ) ) }
+            
         </div>
 
     )
