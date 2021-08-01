@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MovieVerse/static/css/main.28c49d61.chunk.css",
+    "main.js": "/MovieVerse/static/js/main.f969e13e.chunk.js",
+    "main.js.map": "/MovieVerse/static/js/main.f969e13e.chunk.js.map",
+    "runtime-main.js": "/MovieVerse/static/js/runtime-main.70238d0a.js",
+    "runtime-main.js.map": "/MovieVerse/static/js/runtime-main.70238d0a.js.map",
+    "static/js/2.4b3567bd.chunk.js": "/MovieVerse/static/js/2.4b3567bd.chunk.js",
+    "static/js/2.4b3567bd.chunk.js.map": "/MovieVerse/static/js/2.4b3567bd.chunk.js.map",
+    "index.html": "/MovieVerse/index.html",
+    "precache-manifest.1e26c3a14df441455321489c3aaaa5cb.js": "/MovieVerse/precache-manifest.1e26c3a14df441455321489c3aaaa5cb.js",
+    "service-worker.js": "/MovieVerse/service-worker.js",
+    "static/css/main.28c49d61.chunk.css.map": "/MovieVerse/static/css/main.28c49d61.chunk.css.map",
+    "static/js/2.4b3567bd.chunk.js.LICENSE.txt": "/MovieVerse/static/js/2.4b3567bd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70238d0a.js",
+    "static/js/2.4b3567bd.chunk.js",
+    "static/css/main.28c49d61.chunk.css",
+    "static/js/main.f969e13e.chunk.js"
+  ]
+}
