@@ -22,6 +22,11 @@ const ImageGrid = (props) => {
 	useEffect(() => {
 		getMovieRequest();
 	}, []);
+
+    const handleClick = (e) => {
+            props.setMovies(null);
+            e.stopPropagation();
+        }
     
     return (
 
@@ -47,7 +52,8 @@ const ImageGrid = (props) => {
                     right: '-20px',
                     top: '-5px',
                     overflow: 'visible'
-                    }}>
+                    }}
+                    onClick={handleClick}>
                     <FormControlLabel
                         control={<Checkbox icon={<FavoriteBorder />}
                         checkedIcon={<Favorite />}
